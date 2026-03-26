@@ -34,18 +34,39 @@
 
 
 // 2. let is also a way to create variables but it is block scoped and it doesnot get added to window object in browser
-//1
-//  let a = 10;
-//  a= 20;
-// //  let a =90;            //  error----cant redeclare
-//  console.log(a)                 // output 20  
+        //1
+        //  let a = 10;
+        //  a= 20;
+        // //  let a =90;            //  error----cant redeclare
+        //  console.log(a)                 // output 20  
 
 
-//2. 
-// {
-//     let a = 10;
-//     console.log(a);           // output 10  
-    
-// }
+        //2. 
+        // {
+        //     let a = 10;
+        //     console.log(a);           // output 10  
+            
+        // }
 
-// console.log(a);            // error
+        // console.log(a);            // error
+
+
+//3. const is also a way to create variables but it is block scoped and it doesnot get added to window object in browser and it cant be reassigned and cant be redeclared
+// const is created for values which will not in entire program like value of pi i.e. 3.14
+
+        // //1
+        // const a = 10           // cant reassign and cant redeclare
+        // //a= 20                 error
+        // //const a = 90;         error
+        // console.log(a);        //output = 10
+        
+
+
+        //2. 
+        // {
+        //     const b = 50 ;
+        //     console.log(b);         // output 50
+            
+        // }
+
+        // console.log(b);             // error
