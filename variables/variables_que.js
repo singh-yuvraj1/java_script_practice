@@ -58,33 +58,33 @@
 
 
         // Store a number and check if it is even or odd.
-        let num = prompt("Enter a number: ")
-        if (num % 2 == 0){
-                console.log(num," is even");
+        // let num = prompt("Enter a number: ")
+        // if (num % 2 == 0){
+        //         console.log(num," is even");
                 
-        }
-        else{
-                console.log(num," is odd");
-        }
+        // }
+        // else{
+        //         console.log(num," is odd");
+        // }
 
 
         // Create variables for marks in 3 subjects and print total.
-        let marks1 = Number(prompt("enter marks of first subject"))
-        let marks2 = Number(prompt("enter marks of second subject"))
-        let marks3= Number(prompt("enter marks of third subject"))
-        let total_marks = marks1 + marks2 + marks3 ;    
-        console.log("Total marks are: ", total_marks);
+        // let marks1 = Number(prompt("enter marks of first subject"))
+        // let marks2 = Number(prompt("enter marks of second subject"))
+        // let marks3= Number(prompt("enter marks of third subject"))
+        // let total_marks = marks1 + marks2 + marks3 ;    
+        // console.log("Total marks are: ", total_marks);
 
 
 
         // Create a variable and print its type using typeof.
-        let var1 = "Hello World";
-        let var2 = null;
-        let var3 = NaN;
-        let var4 = 8;
-        let var5 = true;
-        console.log(typeof var1); // string
-        console.log(typeof var2); // object
-        console.log(typeof var3); // number
-        console.log(typeof var4); // number
-        console.log(typeof var5); // boolean
+        // let var1 = "Hello World";
+        // let var2 = null;
+        // let var3 = NaN;
+        // let var4 = 8;
+        // let var5 = true;
+        // console.log(typeof var1); // string
+        // console.log(typeof var2); // object
+        // console.log(typeof var3); // number
+        // console.log(typeof var4); // number
+        // console.log(typeof var5); // boolean
