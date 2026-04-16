@@ -1,4 +1,4 @@
-//Control Flow statements in javascript told the flow of program like if else statement, switch statement, for loop, while loop, do while loop, break statement, continue statement etc.
+//Control Flow statements in javascript control the flow of program like if else statement, switch statement, for loop, while loop, do while loop, break statement, continue statement etc.
 
 //it generally tels in which side the program flows like if the condition is true then it will execute the block of code inside if statement otherwise it will execute the block of code inside else statement.
 
@@ -39,6 +39,22 @@ switch(day){
     default:
         console.log("Invalid input! Please enter a number between 1 and 7.");
 }
+
+
+//Another example of switch statement
+let a = 2;
+switch (a){
+    case 1: console.log("hello");
+    case 2: console.log("hi");
+    case 3: console.log("welcome");
+    default: console.log("invalid input");
+}
+
+// output:
+//  "hi"
+//  "welcome"
+//  "invalid input"                bcoz of break statement is not used in the above code so it will execute all the cases after the case 2.
+
 
 
 //Early return statement
