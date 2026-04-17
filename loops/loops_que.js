@@ -36,45 +36,45 @@
 
 
 // 🔹 BASIC (Level 1)
-//1.Print numbers from 1 to 10
-// for (let i=1; i<11; i++){
-//     console.log(i);
-// }
+// 1.Print numbers from 1 to 10
+for (let i=1; i<11; i++){
+    console.log(i);
+}
 
 //2.Print numbers from 10 to 1.
-// for (let i = 10 ; i>=1; i--){
-//     console.log(i);
-// }
+for (let i = 10 ; i>=1; i--){
+    console.log(i);
+}
 
 //3.Print all even numbers from 1 to 50
-// for (let i= 1; i<51; i++){
-//     if (i % 2 == 0){
-//         console.log(i);
-//     }
-// }
+for (let i= 1; i<51; i++){
+    if (i % 2 == 0){
+        console.log(i);
+    }
+}
 
 
 // //4.Print all odd numbers from 1 to 50
-// for (let i= 1; i<51; i++){
-//     if (i % 2 != 0){
-//         console.log(i);
-//     }
-// }
+for (let i= 1; i<51; i++){
+    if (i % 2 != 0){
+        console.log(i);
+    }
+}
 
 
 //5. Find sum of numbers from 1 to n
-// let n = Number(prompt("Enter value of n "))
-// let sum = 0 ;
-// for (let i = 1 ; i< n+ 1; i++){
-//     sum = sum + i
-// }
-// console.log(sum);
+let n = Number(prompt("Enter value of n "))
+let sum = 0 ;
+for (let i = 1 ; i< n+ 1; i++){
+    sum = sum + i
+}
+console.log(sum);
 
 //6.Print multiplication table of a number (user input)
-// let num = Number(prompt("Enter the number for which you want to print table"))
-// for (let i = 1 ; i< 11; i++ ){
-//      console.log(`${num} * ${i} = ${num * i} `);
-// }
+let num = Number(prompt("Enter the number for which you want to print table"))
+for (let i = 1 ; i< 11; i++ ){
+     console.log(`${num} * ${i} = ${num * i} `);
+}
 
 //7.  Count numbers from 1 to N that are divisible by 3
 let num = Number(prompt("Enter number "));
