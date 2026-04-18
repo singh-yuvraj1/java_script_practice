@@ -85,3 +85,77 @@ for (let i = 1 ; i < num+1 ; i++){
      } 
 }
 console.log(count);   
+
+
+
+// ------------------------------------🔹 LOGIC BUILDING (Level 2)------------------------------
+//1. Find factorial of a number
+let num = Number(prompt("Enter number "))
+let factorial = 1;
+for (let i = 1 ; i < num + 1; i++){
+        factorial = factorial * i
+}
+console.log(factorial);
+
+//2. Reverse a number
+let num = Number(prompt("Enter number "))
+let reverse = 0;    
+while (num > 0){
+    let lastDigit = num % 10;
+    reverse = reverse * 10 + lastDigit;
+    num = Math.floor(num / 10);
+}
+console.log(reverse);
+
+//3. Count number of digits in a number
+let num = Number(prompt("Enter number "))
+let count = 0;
+while (num > 0){
+    num = Math.floor(num / 10);
+    count += 1
+}
+console.log(count);
+
+//4. Find sum of digits
+let num = Number(prompt("Enter number "))
+let sum = 0;
+while (num > 0){
+    let lastDigit = num % 10;
+    sum = sum + lastDigit;
+    num = Math.floor(num / 10);
+}
+console.log(sum);
+
+
+//5. Check if number is palindrome
+let num = Number(prompt("Enter number "))
+let originalNum = num;
+let reverse = 0;
+while (num > 0){
+    let lastDigit = num % 10;
+    reverse = reverse * 10 + lastDigit;
+    num = Math.floor(num / 10);
+}
+if (originalNum == reverse){
+    console.log("Palindrome");
+} else {
+    console.log("Not Palindrome");
+}
+
+//6. Find product of digits
+let num = Number(prompt("Enter number "))
+let product = 1;
+while (num > 0){
+    let lastDigit = num % 10;
+    product = product * lastDigit;
+    num = Math.floor(num / 10);
+}
+console.log(product);
+
+
+//7. Remove last digit repeatedly and print each step
+let num = Number(prompt("Enter number "))
+while (num > 0){
+    console.log(num);
+    num = Math.floor(num / 10);
+}
