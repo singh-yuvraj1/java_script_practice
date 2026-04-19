@@ -159,3 +159,76 @@ while (num > 0){
     console.log(num);
     num = Math.floor(num / 10);
 }
+
+
+// 🔹 INTERMEDIATE (Level 3)
+// Print first N Fibonacci numbers
+let n = Number(prompt("Enter value of n "))
+let a = 0;
+let b = 1;
+for (let i = 1; i <= n; i++){
+    console.log(a);
+    let next = a + b;
+    a = b;
+    b = next;
+}
+
+// Check if a number is prime
+let num = Number(prompt("Enter number "))
+let isPrime = true;
+if (num <= 1){
+    isPrime = false;
+} else {
+    for (let i = 2; i <= Math.sqrt(num); i++){
+        if (num % i == 0){
+            isPrime = false;
+            break;
+        }
+    }
+}
+if (isPrime){
+    console.log("Prime");
+} else {
+    console.log("Not Prime");
+}
+
+
+//print all prime numbers from 1 to N
+let n = Number(prompt("Enter value of n "))
+for (let num = 2; num <= n; num++){
+    let isPrime = true;
+    for (let i = 2; i <= Math.sqrt(num); i++){
+        if (num % i == 0){
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime){
+        console.log(num);
+    }
+}
+
+
+//find GCD of two numbers
+let num1 = Number(prompt("Enter first number "))
+let num2 = Number(prompt("Enter second number "))
+while (num2 != 0){
+    let temp = num2;
+    num2 = num1 % num2;
+    num1 = temp;
+}
+console.log(num1);
+
+
+//find LCM of two numbers
+let num1 = Number(prompt("Enter first number "))
+let num2 = Number(prompt("Enter second number "))
+let gcd = 1;
+for (let i = 1; i <= Math.min(num1, num2); i++){
+    if (num1 % i == 0 && num2 % i == 0){
+        gcd = i;
+    }
+}
+let lcm = (num1 * num2) / gcd;
+console.log(lcm);
+
