@@ -232,3 +232,6 @@ for (let i = 1; i <= Math.min(num1, num2); i++){
 let lcm = (num1 * num2) / gcd;
 console.log(lcm);
 
+
+
+
