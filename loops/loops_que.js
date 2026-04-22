@@ -31,6 +31,7 @@
 // Print numbers from 1–100 but:
 // Skip multiples of 5
 // Stop at 50
+
 // Find first number divisible by both 3 and 7 between 1–100
 // Print numbers until sum exceeds 100
 
@@ -234,4 +235,34 @@ console.log(lcm);
 
 
 
+// / 🔹 LOOP CONTROL (Level 4)
+// Print numbers from 1–100 but:
+// Skip multiples of 5
+// Stop at 50
 
+for(let i= 1 ; i<101; i++){
+    if(i % 5 === 0) continue;
+    if(i === 50) break;
+}
+console.log(i);
+
+
+// Find first number divisible by both 3 and 7 between 1–100
+for(let i = 1; i <= 100; i++){
+    if(i % 3 === 0 && i % 7 === 0){
+        console.log(i);
+        break;
+    }
+}
+
+
+
+// Print numbers until sum exceeds 100
+let sum = 0;
+for(let i = 1; i <= 100; i++){
+    sum += i;
+    if(sum > 100){
+        break;
+    }
+    console.log(i);
+}
