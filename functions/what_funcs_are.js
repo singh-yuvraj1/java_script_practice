@@ -42,10 +42,70 @@ let greet2 = ()=>{
     console.log("this is arrow function way to greet");
 }
 
+greet2()
+
+
+//function with parameters and arguments
+
+
+//Parameters are variable listed in function definition. They are placeholders for receving actual value when function is called.
+
+
+//Argumets are actual value passed to function when called.
+
+
+// we can add default value to parameters also.  
+
+//1. Function declaration 
+//a
+function greet(name){
+    console.log(`Hello ${name}`);
+}
+greet("Yuvraj")  
+
+
+//b. 
+function add(a,b) {
+    return a+ b;
+}
+console.log(add(5,4))
+
+
+//2. Function expression
+//a.
+let greett = function(name){
+    console.log(`hlo mr. ${name} this is function expression way of writing function`);
+}
+greett("Singh")
 
 
 
+//b.
+let addd =function(a,b) {
+    return a+ b;
+}
+console.log(addd(5,4))
+
+
+//3. arrow function 
+//a.
+let greettt = (name)=>{
+    console.log(`this is arrow function way to greet ${name}`);
+}
+
+greettt("Gentleman")
 
 
 
+//b.
+let multiply = (a,b)=> {
+    return a* b;
+}
+console.log(multiply(5,4))
 
+
+//if there is only one paramter so then we dont need to add these paranthesis  ()
+let multiplly =  x =>{
+    return x ** 2
+}
+console.log(multiplly(5));
