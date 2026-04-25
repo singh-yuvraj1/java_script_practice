@@ -109,3 +109,7 @@ let multiplly =  x =>{
     return x ** 2
 }
 console.log(multiplly(5));
+
+//-------------------------------------------Default Parameters----------------------------------
+//you can also give default value in  paramterts so that if user forgot to pass arguments then it will use those values
+
