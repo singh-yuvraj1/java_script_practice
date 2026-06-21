@@ -113,3 +113,44 @@ console.log(multiplly(5));
 //-------------------------------------------Default Parameters----------------------------------
 //you can also give default value in  paramterts so that if user forgot to pass arguments then it will use those values
 
+// supppose you wrote a function and the user forgot to pass the arguments then it will give undefined so to avoid that we can give default value to parameters.
+
+// Ex ---
+
+function greet(name = "Yuvraj"){
+    console.log(`Hello ${name}`);
+}
+greet() //Hello Yuvraj
+
+
+
+//------------------------------Rest operator------------------------------------   
+
+// SUppose you want to pass multiple arguments to a fucntion but you dont know how many arguments user will pass then we can use rest operator. It is denoted by three dots ... before the parameter name. It will take all the arguments passed to function and store them in an array.
+
+
+//EX
+
+function sum(...numbers){
+    let total = 0;
+    for(let num of numbers){
+        total += num;
+    }   
+    return total;
+}
+console.log(sum(1, 2, 3, 4, 5));
+
+//output: 15
+
+
+//-----------you can also give more parameters along with rest operator but rest operator should be the last parameter in the function definition.-----------------
+function greet(greeting, ...names) {
+    for (let name of names) {
+        console.log(`${greeting} ${name}`);
+    }
+}
+greet("Hello", "Alice", "Bob", "Charlie");
+//output:
+//Hello Alice
+//Hello Bob
+//Hello Charlie
