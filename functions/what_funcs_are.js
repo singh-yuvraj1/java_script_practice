@@ -154,3 +154,61 @@ greet("Hello", "Alice", "Bob", "Charlie");
 //Hello Alice
 //Hello Bob
 //Hello Charlie
+
+
+
+//------------------------------Higehr Order Function------------------------------------
+
+// A higher order function is a function that takes another function as an argument or returns a function as a result. In JavaScript, functions are first-class citizens, which means they can be treated like any other value. This allows us to create higher-order functions that can manipulate and work with other functions.
+
+function greet(name) {
+    return function(message) {
+        console.log(`${message}, ${name}!`);
+    };  
+}
+greet("Alice")("Hello"); // Output: Hello, Alice!
+
+
+
+// or we can store the returned function in a variable and call it later:
+const greetAlice = greet("Alice");
+greetAlice("Hi"); // Output: Hi, Alice!
+
+
+
+// ANother example in which we will pass function as an argument to another function
+function unknown(newfunc){
+    
+}
+
+unknown(basefunc);{
+    console.log("this is function passed as an argument to another function");
+}  
+
+//output: this is function passed as an argument to another function
+
+
+
+//------------------------------hoisting------------------------------------
+
+//hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase. This means that you can use functions and variables before they are declared in the code. However, it's important to note that only function declarations are hoisted, while function expressions and variables declared with let and const are not hoisted in the same way.
+
+// funciion declararation and function statements are hoisted, which means you can call them before they are defined in the code. For example:
+
+
+// example of function declaration hoisting
+
+hoistExample(); // This will work because the function is hoisted
+
+function hoistExample() {
+    console.log("This function is hoisted!");
+}
+
+
+//ex 2
+
+hoistExample2(); // This will also work because the function is hoisted
+
+function hoistExample2() {
+    console.log("This function is hoisted too!");
+}   
