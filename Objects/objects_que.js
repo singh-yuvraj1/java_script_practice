@@ -98,3 +98,51 @@ const person = {
 
 person.email = "yuvraj@example.com"; // Add new property
 console.log(person.email); // Output: yuvraj@example.com
+
+
+//4. Delete a property from an object.
+delete person.email; // Delete the email property
+
+
+//5. Check if a property exists in an object.
+person.hasOwnProperty('email'); // Returns false since email was deleted
+
+
+//6. Count the number of properties in an object.
+const propertyCount = Object.keys(person).length;
+console.log(propertyCount); // Output: 3 (name, age, city)
+
+
+//7. Loop through all properties using for...in.
+for (const key in person) {
+    console.log(`${key}: ${person[key]}`);
+}
+
+
+//8. Clone an object without modifying the original.
+const clonedPerson = Object.assign({}, person);
+// or using spread operator
+const clonedPerson = { ...person };
+
+
+//9. Merge two objects into one.
+const obj1 = { a: 1, b: 2 };
+const obj2 = { b: 3, c: 4 };
+const mergedObj = { ...obj1, ...obj2 }; // { a: 1, b: 3, c: 4 }
+
+
+//10. Convert an object into an array.
+const obj = { a: 1, b: 2, c: 3 };
+const arr = Object.entries(obj); // [['a', 1], ['b', 2], ['c', 3]]
+
+
+//11. Convert an array back into an object.
+const arr = [['a', 1], ['b', 2], ['c', 3]];
+const obj = Object.fromEntries(arr); // { a: 1, b: 2, c: 3 }
+
+
+//12. Find the key with the highest value.
+const obj = { a: 1, b: 2, c: 3 };
+const maxKey = Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : b);
+console.log(maxKey); // Output: c
+
