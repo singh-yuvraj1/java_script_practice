@@ -146,3 +146,52 @@ const obj = { a: 1, b: 2, c: 3 };
 const maxKey = Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : b);
 console.log(maxKey); // Output: c
 
+
+
+//13. Sort object properties by value.
+const obj = { a: 3, b: 1, c: 2 };
+const sortedEntries = Object.entries(obj).sort(([, valueA], [, valueB]) => valueA - valueB);
+const sortedObj = Object.fromEntries(sortedEntries);
+console.log(sortedObj); // Output: { b: 1, c: 2, a: 3 }
+
+
+//14. Freeze an object and test modifications.
+const obj = { a: 1, b: 2 };
+Object.freeze(obj);
+obj.a = 3;
+// obj.a will still be 1 because the object is frozen
+
+console.log(obj.a); // Output: 1
+
+
+//15. Compare two objects for equality.
+function areObjectsEqual(obj1, obj2) {
+    const keys1 = Object.keys(obj1);
+    const keys2 = Object.keys(obj2);
+    if (keys1.length !== keys2.length) {
+        return false;
+    } 
+    for (const key of keys1) {
+        if (obj1[key] !== obj2[key]) {
+            return false;
+        }
+    }
+    return true;
+    }
+  
+  // Example usage:
+  const obj1 = { a: 1, b: 2 };
+  const obj2 = { a: 1, b: 2 };
+  const obj3 = { a: 1, b: 3 };
+
+  console.log(areObjectsEqual(obj1, obj2)); // Output: true
+
+
+  //16. Create an object with a method greet().
+const person = {
+    name: "Yuvraj",
+    greet: function() {
+        console.log(`Hello, my name is ${this.name}`);
+    } }
+// Example usage:
+person.greet(); // Output: Hello, my name is Yuvraj 
