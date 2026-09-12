@@ -39,3 +39,20 @@ function sayBye() {
 }
 
 greet("Yuvraj", sayBye);
+
+
+//4
+function orderFood(callback) {
+    console.log("Food is being prepared...");
+
+    setTimeout(() => {
+        console.log("Food is ready!");
+        callback();
+    }, 2000);
+}
+
+function eatFood() {
+    console.log("Let's eat!");
+}
+
+orderFood(eatFood);
