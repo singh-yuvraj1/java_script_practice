@@ -19,15 +19,31 @@
 
 ///--------Same code use setTimeout---------
 
-let pr = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        let number= Math.floor(Math.random()*10)
-        if (number>50) resolve(number)
-        else reject(number)
-    },5000);
-})
-pr.then(function(value){
-    console.log(value);
-}).catch(function (value) {
-    console.log(value);
-})
+// let pr = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         let number= Math.floor(Math.random()*10)
+//         if (number>50) resolve(number)
+//         else reject(number)
+//     },5000);
+// })
+// pr.then(function(value){
+//     console.log(value);
+// }).catch(function (value) {
+//     console.log(value);
+// })
+
+
+// let pr= new Promise(function(res , rej){
+//     setTimeout(()=>{
+//        let nm= Math.floor(Math.random()*10)
+//        if (nm > 5) res(`resolved number is ${nm}` )
+//         else rej(`rejected number is ${nm}`)
+//     },2000)
+// })
+// pr.then(function(val){
+//     console.log(val);
+// })
+// .catch(function(val){
+//     console.log(val);
+// })
+
